@@ -104,13 +104,13 @@ export default function Header({ siteConfig }: HeaderProps) {
   return (
     <header className={`w-full z-50 transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-2xl bg-slate-950/90 backdrop-blur-lg text-white" : "absolute top-0 left-0 right-0 bg-transparent text-white"}`}>
       {/* Top Utility Bar */}
-      <div className="text-xs py-2.5 px-4 sm:px-8">
+      <div className="text-xs py-1 sm:py-2.5 px-4 sm:px-8 border-b border-slate-800/50 sm:border-none">
         <div className="max-w-7xl mx-auto flex justify-end items-center">
-          <div className="flex items-center space-x-4 text-slate-200">
+          <div className="flex items-center space-x-3 text-[11px] sm:text-xs text-slate-200">
             {isLoggedIn ? (
               <>
                 <Link href="/profile" className="hover:text-amber-400 flex items-center gap-1">
-                  <UserCheck className="w-3.5 h-3.5" /> 마이페이지
+                  <UserCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> 마이페이지
                 </Link>
                 <button onClick={handleLogout} className="hover:text-amber-400 cursor-pointer">
                   로그아웃
@@ -119,10 +119,10 @@ export default function Header({ siteConfig }: HeaderProps) {
             ) : (
               <>
                 <Link href="/login" className="hover:text-amber-400 flex items-center gap-1">
-                  <Lock className="w-3.5 h-3.5" /> 로그인
+                  <Lock className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> 로그인
                 </Link>
                 <Link href="/register" className="hover:text-amber-400 flex items-center gap-1">
-                  <UserPlus className="w-3.5 h-3.5" /> 회원가입
+                  <UserPlus className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> 회원가입
                 </Link>
               </>
             )}
@@ -132,13 +132,13 @@ export default function Header({ siteConfig }: HeaderProps) {
 
       {/* Main Header / GNB */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center group py-2">
+          <Link href="/" className="flex items-center group py-1">
             <img
               src="https://res.cloudinary.com/lyjyvy54/image/upload/v1785311356/Vector_kau2qp.png"
               alt="HDONE LIFE 로고"
-              className="h-10 sm:h-12 w-auto object-contain brightness-0 invert group-hover:opacity-85 transition-all"
+              className="h-6 sm:h-12 w-auto object-contain brightness-0 invert group-hover:opacity-85 transition-all"
             />
           </Link>
 
@@ -158,14 +158,12 @@ export default function Header({ siteConfig }: HeaderProps) {
                   </Link>
 
                   {/* Dropdown Menu */}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-slate-800 text-slate-100 rounded-b-lg shadow-2xl py-2 hidden group-hover:block transition-all border border-slate-700/50">
+                  <div className="absolute top-full left-0 hidden group-hover:block w-48 bg-slate-900/95 backdrop-blur-md rounded-xl shadow-2xl py-2 border border-slate-800 animate-in fade-in slide-in-from-top-2 duration-200">
                     {item.subItems.map((sub) => (
                       <Link
                         key={sub.name}
                         href={sub.href}
-                        className={`block px-5 py-2.5 text-sm transition-colors hover:bg-slate-700 hover:text-amber-400 ${
-                          pathname === sub.href ? "text-amber-400 font-bold bg-slate-700/50" : "text-slate-300"
-                        }`}
+                        className="block px-4 py-2.5 text-xs text-slate-300 hover:text-amber-400 hover:bg-slate-800/80 transition-colors"
                       >
                         {sub.name}
                       </Link>
@@ -176,17 +174,17 @@ export default function Header({ siteConfig }: HeaderProps) {
             })}
           </nav>
 
-          {/* Mobile Hamburger Button */}
-          <div className="flex md:hidden items-center gap-3">
-            <a href={`tel:${phoneNum}`} className="bg-amber-500 text-slate-950 px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1">
-              <PhoneCall className="w-3.5 h-3.5" /> 전화
+          {/* Mobile Right Controls */}
+          <div className="flex md:hidden items-center gap-2">
+            <a href={`tel:${phoneNum}`} className="bg-amber-500 text-slate-950 px-2.5 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+              <PhoneCall className="w-3 h-3" /> 전화
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-200 hover:text-white hover:bg-slate-800"
+              className="p-1.5 rounded-lg text-slate-200 hover:text-white hover:bg-slate-800"
               aria-label="메뉴 열기"
             >
-              {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
@@ -194,7 +192,7 @@ export default function Header({ siteConfig }: HeaderProps) {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[112px] bg-slate-950/95 z-50 overflow-y-auto px-6 py-6 border-t border-slate-800">
+        <div className="md:hidden fixed inset-0 top-[84px] bg-slate-950/95 z-50 overflow-y-auto px-6 py-6 border-t border-slate-800">
           <div className="space-y-4 max-w-lg mx-auto">
             {/* Quick Mobile Auth */}
             <div className="bg-slate-900 p-4 rounded-xl flex justify-between items-center border border-slate-800 mb-6">
