@@ -69,6 +69,15 @@ export default function FuneralServicePage() {
           </div>
         </div>
 
+        {/* Banner Image above Table */}
+        <div className="w-full overflow-hidden rounded-sm border border-slate-200 shadow-md">
+          <img
+            src="https://res.cloudinary.com/lyjyvy54/image/upload/v1785308928/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_29%EC%9D%BC_%EC%98%A4%ED%9B%84_03_38_13_1_1_mpokg4.png"
+            alt="장례 서비스 안내"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+
         {/* Detailed Items Table (Updated as per user's image) */}
         <div className="space-y-6">
           <div className="flex items-center justify-between border-b border-slate-200 pb-4">
