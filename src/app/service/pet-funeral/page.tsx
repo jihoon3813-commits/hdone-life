@@ -32,7 +32,7 @@ export default function PetFuneralServicePage() {
       <SubVisual
         title="펫장례상품"
         subtitle="평생을 함께해 준 반려동물의 마지막 길을 정성과 사랑으로 모십니다."
-        categoryName="서비스영역"
+        categoryName="서비스 안내"
         currentPageName="펫장례상품"
         subItems={subNavItems}
         bgImage="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=1600&q=80"

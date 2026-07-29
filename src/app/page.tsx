@@ -208,7 +208,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="text-center space-y-3 mb-14">
             <span className="text-amber-600 font-bold text-xs tracking-widest uppercase">OUR SERVICES</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">HDONE LIFE 서비스영역</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">HDONE LIFE 서비스 안내</h2>
             <p className="text-slate-600 text-base max-w-xl mx-auto">
               정직과 신뢰를 바탕으로 삶의 중요한 모든 순간을 소중히 모십니다.
             </p>

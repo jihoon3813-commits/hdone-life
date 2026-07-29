@@ -32,7 +32,7 @@ export default function CruiseServicePage() {
       <SubVisual
         title="크루즈상품"
         subtitle="낭만과 꿈의 여행, 바다 위의 럭셔리 휴양을 느껴보세요."
-        categoryName="서비스영역"
+        categoryName="서비스 안내"
         currentPageName="크루즈상품"
         subItems={subNavItems}
         bgImage="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1600&q=80"

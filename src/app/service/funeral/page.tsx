@@ -32,7 +32,7 @@ export default function FuneralServicePage() {
       <SubVisual
         title="장례상품"
         subtitle="예와 정성을 다하여 모시는 HDONE-LIFE 후불제 장례 서비스"
-        categoryName="서비스영역"
+        categoryName="서비스 안내"
         currentPageName="장례상품"
         subItems={subNavItems}
         bgImage="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1600&q=80"

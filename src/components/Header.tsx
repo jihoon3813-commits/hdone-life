@@ -22,7 +22,7 @@ const mainNavItems = [
     ],
   },
   {
-    name: "서비스영역",
+    name: "서비스 안내",
     href: "/service/funeral",
     subItems: [
       { name: "장례상품", href: "/service/funeral" },

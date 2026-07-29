@@ -46,7 +46,7 @@ export default function WeddingServicePage() {
       <SubVisual
         title="웨딩상품"
         subtitle="생애 최고의 순간을 모든 패키지 상품에 완벽하게 담아드립니다."
-        categoryName="서비스영역"
+        categoryName="서비스 안내"
         currentPageName="웨딩상품"
         subItems={subNavItems}
         bgImage="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80"
