@@ -276,22 +276,30 @@ const defaultData: DBStructure = {
   popups: [],
 };
 
+let memoryCache: DBStructure | null = null;
+
 function readDB(): DBStructure {
-  if (!fs.existsSync(dbFilePath)) {
-    fs.writeFileSync(dbFilePath, JSON.stringify(defaultData, null, 2), "utf8");
-    return defaultData;
-  }
+  if (memoryCache) return memoryCache;
   try {
-    const raw = fs.readFileSync(dbFilePath, "utf8");
-    return JSON.parse(raw);
+    if (fs.existsSync(dbFilePath)) {
+      const raw = fs.readFileSync(dbFilePath, "utf8");
+      memoryCache = JSON.parse(raw);
+      return memoryCache!;
+    }
   } catch (e) {
-    fs.writeFileSync(dbFilePath, JSON.stringify(defaultData, null, 2), "utf8");
-    return defaultData;
+    // Ignore read errors
   }
+  memoryCache = { ...defaultData };
+  return memoryCache;
 }
 
 function writeDB(data: DBStructure) {
-  fs.writeFileSync(dbFilePath, JSON.stringify(data, null, 2), "utf8");
+  memoryCache = data;
+  try {
+    fs.writeFileSync(dbFilePath, JSON.stringify(data, null, 2), "utf8");
+  } catch (e) {
+    // Ignore read-only filesystem errors on Vercel
+  }
 }
 
 export const db = {

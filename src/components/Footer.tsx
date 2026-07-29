@@ -86,7 +86,7 @@ export default function Footer({ siteConfig }: FooterProps) {
         {/* Copyright */}
         <div className="pt-2 text-[11px] text-gray-500 flex items-center justify-between">
           <span>Copyright © {new Date().getFullYear()} {config.company_kr_name}. All Rights Reserved.</span>
-          <Link href="/admin" className="text-gray-500 hover:text-gray-300 transition-colors">
+          <Link href="/admin" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-300 transition-colors">
             관리자
           </Link>
         </div>
