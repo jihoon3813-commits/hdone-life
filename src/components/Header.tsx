@@ -192,7 +192,7 @@ export default function Header({ siteConfig }: HeaderProps) {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[84px] bg-slate-950/95 z-50 overflow-y-auto px-6 py-6 border-t border-slate-800">
+        <div className="md:hidden absolute top-full left-0 right-0 w-full bg-slate-950/98 text-white shadow-2xl border-t border-slate-800/80 px-6 py-6 overflow-y-auto max-h-[calc(100vh-60px)] z-50 animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="space-y-4 max-w-lg mx-auto">
             {/* Quick Mobile Auth */}
             <div className="bg-slate-900 p-4 rounded-xl flex justify-between items-center border border-slate-800 mb-6">
