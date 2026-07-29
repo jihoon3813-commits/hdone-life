@@ -84,6 +84,20 @@ export default function Header({ siteConfig }: HeaderProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
+  // Mobile back button listener for mobile menu drawer
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      window.history.pushState({ mobileMenu: true }, "");
+      const handlePopState = () => {
+        setMobileMenuOpen(false);
+      };
+      window.addEventListener("popstate", handlePopState);
+      return () => {
+        window.removeEventListener("popstate", handlePopState);
+      };
+    }
+  }, [mobileMenuOpen]);
+
   const handleLogout = () => {
     localStorage.removeItem("hdone_user");
     setIsLoggedIn(false);

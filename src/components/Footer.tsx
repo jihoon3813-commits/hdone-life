@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 export interface FooterProps {
@@ -19,6 +19,20 @@ export interface FooterProps {
 
 export default function Footer({ siteConfig }: FooterProps) {
   const [showEmailRejectModal, setShowEmailRejectModal] = useState(false);
+
+  // Mobile hardware/browser back button handler for modal
+  useEffect(() => {
+    if (showEmailRejectModal) {
+      window.history.pushState({ modalOpen: true }, "");
+      const handlePopState = () => {
+        setShowEmailRejectModal(false);
+      };
+      window.addEventListener("popstate", handlePopState);
+      return () => {
+        window.removeEventListener("popstate", handlePopState);
+      };
+    }
+  }, [showEmailRejectModal]);
 
   const config = {
     site_name: siteConfig?.site_name || "HDONE LIFE",
