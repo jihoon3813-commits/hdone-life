@@ -1,0 +1,56 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #0f172a;
+    --primary-hover: #1e293b;
+    --accent: #d97706;
+    --accent-gold: #b45309;
+    --bg-light: #f8fafc;
+    --border-gray: #e2e8f0;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #1e293b;
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    word-break: keep-all;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Minimal rounded corners project-wide (cards, buttons, badges, inputs, indicators, toggles) */
+*,
+.rounded-full,
+.rounded-3xl,
+.rounded-2xl,
+.rounded-xl,
+.rounded-lg,
+.rounded-md,
+.rounded,
+.rounded-sm {
+  border-radius: 3px !important;
+}
+
+/* Custom Animation & Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.table-custom-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.table-custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 2px !important;
+}
+.table-custom-scroll::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+}

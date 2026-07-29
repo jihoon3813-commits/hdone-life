@@ -1,0 +1,172 @@
+{
+  "site_config": [
+    {
+      "id": 1,
+      "site_name": "HDONE LIFE",
+      "company_kr_name": "(주)에이치디원",
+      "phone": "1544-8826",
+      "email": "contact@hdone-life.co.kr",
+      "address": "서울시 중랑구 동일로 964, 4층 4061호(묵동, 에릭슨시스템)",
+      "business_number": "149-86-03849",
+      "ceo_name": "박혜경",
+      "privacy_officer": "박혜경",
+      "hours": "평일 09:00 - 18:00",
+      "map_lat": 37.6108,
+      "map_lng": 127.0772,
+      "updated_at": "2026-07-29T09:12:00.000Z"
+    }
+  ],
+  "main_slides": [
+    {
+      "id": 1,
+      "title": "HDONE LIFE 장례서비스",
+      "subtitle": "저희 HDONE LIFE는 가족처럼 모시는 정성스러운 기업입니다.\n삶의 소중한 순간, 항상 힘이 되는 파트너가 되겠습니다.",
+      "bg_image": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1600&q=80",
+      "link_url": "/service/funeral",
+      "is_active": 1,
+      "display_order": 1,
+      "created_at": "2026-07-28T14:13:06.190Z"
+    },
+    {
+      "id": 2,
+      "title": "HDONE LIFE 웨딩서비스",
+      "subtitle": "생애 최고의 서비스를 모든 패키지 상품에 담아\n영원한 추억과 행복을 함께하는 웨딩의 모든 것을 준비해 드립니다.",
+      "bg_image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80",
+      "link_url": "/service/wedding",
+      "is_active": 1,
+      "display_order": 2,
+      "created_at": "2026-07-28T14:13:06.190Z"
+    },
+    {
+      "id": 3,
+      "title": "HDONE LIFE 크루즈여행",
+      "subtitle": "낭만과 꿈의 크루즈 여행을 통해 다양한 공연과 이벤트로\n모든 관광을 고품격으로 누릴 수 있는 멋진 여행을 느껴보세요.",
+      "bg_image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=1600&q=80",
+      "link_url": "/service/cruise",
+      "is_active": 1,
+      "display_order": 3,
+      "created_at": "2026-07-28T14:13:06.190Z"
+    },
+    {
+      "id": 4,
+      "title": "HDONE LIFE 펫장례",
+      "subtitle": "평생 같이한 반려동물을 떠나보내는 펫장례의 모든 과정을\n가족과 같은 정성과 사랑으로 엄수해 드리겠습니다.",
+      "bg_image": "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=1600&q=80",
+      "link_url": "/service/pet-funeral",
+      "is_active": 1,
+      "display_order": 4,
+      "created_at": "2026-07-28T14:13:06.190Z"
+    }
+  ],
+  "notices": [
+    {
+      "id": 1,
+      "title": "HDONE LIFE 장례서비스 프리미엄 상품 출시 안내",
+      "content": "안녕하세요. HDONE LIFE입니다.\n\n고객님들의 끊임없는 성원에 힘입어 보다 품격 높은 396만원 프리미엄 장례 서비스를 선보이게 되었습니다.\n\n최상의 예우와 정성으로 모시겠습니다. 자세한 내용은 서비스 안내 페이지를 참고해 주시기 바랍니다.",
+      "author": "관리자",
+      "views": 142,
+      "is_important": 1,
+      "attachment_name": null,
+      "attachment_url": null,
+      "created_at": "2026-07-28 09:00:00",
+      "updated_at": "2026-07-28 09:00:00"
+    },
+    {
+      "id": 2,
+      "title": "HDONE LIFE 회원 혜택 및 동남아 크루즈 할인 이벤트",
+      "content": "HDONE LIFE 회원을 위한 특별 할인이 적용되는 동남아 크루즈 여행 상품이 오픈되었습니다.\n총 여행 금액에서 회원 전용 20만원 할인 혜택이 적용됩니다.",
+      "author": "관리자",
+      "views": 89,
+      "is_important": 0,
+      "attachment_name": null,
+      "attachment_url": null,
+      "created_at": "2026-07-27 14:00:00",
+      "updated_at": "2026-07-27 14:00:00"
+    },
+    {
+      "id": 3,
+      "title": "HDONE LIFE 공식 웹사이트 신규 오픈 안내",
+      "content": "HDONE LIFE 공식 웹사이트가 새롭게 개편되었습니다.\n\n언제 어디서나 장례, 웨딩, 크루즈, 펫장례 서비스를 쉽고 빠르게 확인하시고 1:1 상담을 신청하실 수 있습니다.",
+      "author": "관리자",
+      "views": 210,
+      "is_important": 0,
+      "attachment_name": null,
+      "attachment_url": null,
+      "created_at": "2026-07-26 10:00:00",
+      "updated_at": "2026-07-26 10:00:00"
+    }
+  ],
+  "qnas": [
+    {
+      "id": 1,
+      "title": "상례 상담은 언제 언제 가능한가요?",
+      "content": "급하게 긴급 장례 발생 시 몇 시까지 연락이 가능한가요?",
+      "author": "김*철",
+      "password": "1234",
+      "views": 45,
+      "is_secret": 0,
+      "is_answered": 1,
+      "answer": "안녕하세요 HDONE LIFE입니다. 당사의 24시간 장례 종합상황실은 365일 연중무휴 24시간 운영됩니다. 언제든지 대표전화(1544-8826)로 연락 주시면 즉시 앰블런스 이송 및 의전지도사가 출동합니다.",
+      "answer_at": "2026-07-28 10:00:00",
+      "created_at": "2026-07-28 09:30:00"
+    },
+    {
+      "id": 2,
+      "title": "펫장례 서비스 구체적인 절차 질문드립니다.",
+      "content": "반려견 장례 시 운구 서비스도 포함되어 있는지 궁금합니다.",
+      "author": "이*진",
+      "password": "1234",
+      "views": 32,
+      "is_secret": 0,
+      "is_answered": 1,
+      "answer": "네, HDONE LIFE 펫장례 서비스에는 차량 운구부터 염습, 추모, 화장, 봉안까지 전 과정에 전문 지도사가 함께 진행해 드립니다.",
+      "answer_at": "2026-07-28 11:30:00",
+      "created_at": "2026-07-28 11:00:00"
+    }
+  ],
+  "galleries": [
+    {
+      "id": 1,
+      "title": "HDONE LIFE 고품격 전문 장례 행사 진행 현장",
+      "content": "정성을 다해 모시는 HDONE LIFE의 실제 장례 의전 지원 현장 사진입니다.",
+      "author": "관리자",
+      "views": 156,
+      "main_image": "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80",
+      "images_json": "[\"https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80\"]",
+      "created_at": "2026-07-28 12:00:00"
+    },
+    {
+      "id": 2,
+      "title": "HDONE LIFE 웨딩 컨설팅 및 드레스 라인업",
+      "content": "아름답고 영원히 기억될 신부님의 스페셜 웨딩 갤러리입니다.",
+      "author": "관리자",
+      "views": 204,
+      "main_image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+      "images_json": "[\"https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80\"]",
+      "created_at": "2026-07-27 15:00:00"
+    },
+    {
+      "id": 3,
+      "title": "HDONE LIFE 프리미엄 럭셔리 크루즈 투어",
+      "content": "동남아 고품격 크루즈 객실 및 부대시설 전경입니다.",
+      "author": "관리자",
+      "views": 178,
+      "main_image": "https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80",
+      "images_json": "[\"https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=800&q=80\"]",
+      "created_at": "2026-07-26 16:00:00"
+    }
+  ],
+  "inquiries": [],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin",
+      "password": "admin1234",
+      "name": "HDONE 관리자",
+      "phone": "010-0000-0000",
+      "role": "admin",
+      "created_at": "2026-07-28 00:00:00"
+    }
+  ],
+  "popups": []
+}
