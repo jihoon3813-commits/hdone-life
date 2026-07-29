@@ -102,9 +102,9 @@ export default function Header({ siteConfig }: HeaderProps) {
   const phoneNum = siteConfig?.phone || "1544-8826";
 
   return (
-    <header className={`w-full z-50 transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-2xl bg-slate-950/85 backdrop-blur-lg border-b border-slate-800/60 text-white" : "absolute top-0 left-0 right-0 bg-transparent text-white border-b border-white/10"}`}>
+    <header className={`w-full z-50 transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-2xl bg-slate-950/85 backdrop-blur-lg border-b border-slate-800/40 text-white" : "absolute top-0 left-0 right-0 bg-transparent text-white"}`}>
       {/* Top Utility Bar */}
-      <div className="border-b border-white/10 text-xs py-2 px-4 sm:px-8">
+      <div className="text-xs py-2.5 px-4 sm:px-8">
         <div className="max-w-7xl mx-auto flex justify-end items-center">
           <div className="flex items-center space-x-4 text-slate-200">
             {isLoggedIn ? (

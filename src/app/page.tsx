@@ -161,9 +161,9 @@ export default function HomePage() {
               <div className="pt-4">
                 <Link
                   href={slide.link_url}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg shadow-xl text-base transition-all transform hover:-translate-y-0.5"
+                  className="inline-flex items-center gap-2 px-6 py-3 border border-white/60 hover:border-amber-400 text-white hover:text-amber-400 font-semibold rounded-sm text-sm sm:text-base transition-all bg-black/20 hover:bg-black/40 backdrop-blur-sm group"
                 >
-                  자세히 보기 <ArrowRight className="w-5 h-5" />
+                  자세히 보기 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
