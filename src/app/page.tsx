@@ -11,7 +11,36 @@ import { formatPhoneNumber } from "@/lib/utils";
 
 export default function HomePage() {
   const [siteConfig, setSiteConfig] = useState<any>(null);
-  const [slides, setSlides] = useState<any[]>([]);
+  const [slides, setSlides] = useState<any[]>([
+    {
+      id: 1,
+      title: "HDONE LIFE 장례서비스",
+      subtitle: "저희 HDONE LIFE는 가족처럼 모시는 정성스러운 기업입니다.\n삶의 소중한 순간, 항상 힘이 되는 파트너가 되겠습니다.",
+      bg_image: "https://res.cloudinary.com/lyjyvy54/image/upload/v1785309033/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_28%EC%9D%BC_%EC%98%A4%ED%9B%84_11_01_33_1_b3b5zc.png",
+      link_url: "/service/funeral",
+    },
+    {
+      id: 2,
+      title: "HDONE LIFE 웨딩서비스",
+      subtitle: "생애 최고의 서비스를 모든 패키지 상품에 담아\n영원한 추억과 행복을 함께하는 웨딩의 모든 것을 준비해 드립니다.",
+      bg_image: "https://res.cloudinary.com/lyjyvy54/image/upload/v1785309033/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_28%EC%9D%BC_%EC%98%A4%ED%9B%84_11_01_34_2_oupji9.png",
+      link_url: "/service/wedding",
+    },
+    {
+      id: 3,
+      title: "HDONE LIFE 크루즈여행",
+      subtitle: "낭만과 꿈의 크루즈 여행을 통해 다양한 공연과 이벤트로\n모든 관광을 고품격으로 누릴 수 있는 멋진 여행을 느껴보세요.",
+      bg_image: "https://res.cloudinary.com/lyjyvy54/image/upload/v1785309032/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_28%EC%9D%BC_%EC%98%A4%ED%9B%84_11_01_34_3_dzkukk.png",
+      link_url: "/service/cruise",
+    },
+    {
+      id: 4,
+      title: "HDONE LIFE 펫장례",
+      subtitle: "평생 같이한 반려동물을 떠나보내는 펫장례의 모든 과정을\n가족과 같은 정성과 사랑으로 엄수해 드리겠습니다.",
+      bg_image: "https://res.cloudinary.com/lyjyvy54/image/upload/v1785309033/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_28%EC%9D%BC_%EC%98%A4%ED%9B%84_11_01_34_4_q59ekk.png",
+      link_url: "/service/pet-funeral",
+    },
+  ]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [notices, setNotices] = useState<any[]>([]);
   const [qnas, setQnas] = useState<any[]>([]);
