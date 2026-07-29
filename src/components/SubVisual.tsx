@@ -30,7 +30,7 @@ export default function SubVisual({
     <div className="w-full">
       {/* Visual Banner */}
       <div
-        className="relative bg-cover bg-center h-64 sm:h-80 flex items-center justify-center text-white text-center"
+        className="relative bg-cover bg-center pt-32 pb-12 sm:pt-40 sm:pb-16 flex items-center justify-center text-white text-center"
         style={{ backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url(${bgImage})` }}
       >
         <div className="max-w-4xl px-4 space-y-3">

@@ -102,20 +102,14 @@ export default function Header({ siteConfig }: HeaderProps) {
   const phoneNum = siteConfig?.phone || "1544-8826";
 
   return (
-    <header className={`w-full z-50 transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-2xl bg-slate-950/75 backdrop-blur-lg border-b border-slate-800/60 text-white" : "relative bg-slate-900 text-white"}`}>
+    <header className={`w-full z-50 transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 right-0 shadow-2xl bg-slate-950/85 backdrop-blur-lg border-b border-slate-800/60 text-white" : "absolute top-0 left-0 right-0 bg-transparent text-white border-b border-white/10"}`}>
       {/* Top Utility Bar */}
-      <div className="border-b border-slate-800 text-xs py-2 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <span className="flex items-center gap-1 font-medium text-amber-400">
-              <PhoneCall className="w-3.5 h-3.5" /> 24시간 장례 종합상황실: <strong className="text-white ml-1">{phoneNum}</strong>
-            </span>
-          </div>
-
-          <div className="flex items-center space-x-4 text-slate-300">
+      <div className="border-b border-white/10 text-xs py-2 px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto flex justify-end items-center">
+          <div className="flex items-center space-x-4 text-slate-200">
             {isLoggedIn ? (
               <>
-                <Link href="/profile" className="hover:text-white flex items-center gap-1">
+                <Link href="/profile" className="hover:text-amber-400 flex items-center gap-1">
                   <UserCheck className="w-3.5 h-3.5" /> 마이페이지
                 </Link>
                 <button onClick={handleLogout} className="hover:text-amber-400 cursor-pointer">
@@ -124,10 +118,10 @@ export default function Header({ siteConfig }: HeaderProps) {
               </>
             ) : (
               <>
-                <Link href="/login" className="hover:text-white flex items-center gap-1">
+                <Link href="/login" className="hover:text-amber-400 flex items-center gap-1">
                   <Lock className="w-3.5 h-3.5" /> 로그인
                 </Link>
-                <Link href="/register" className="hover:text-white flex items-center gap-1">
+                <Link href="/register" className="hover:text-amber-400 flex items-center gap-1">
                   <UserPlus className="w-3.5 h-3.5" /> 회원가입
                 </Link>
               </>

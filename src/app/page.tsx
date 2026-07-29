@@ -134,7 +134,7 @@ export default function HomePage() {
       <PopupModal />
 
       {/* 4.3 메인 비주얼 슬라이더 */}
-      <section className="relative w-full bg-slate-950 overflow-hidden min-h-[500px] sm:min-h-[600px] flex items-center">
+      <section className="relative w-full bg-slate-950 overflow-hidden min-h-[580px] sm:min-h-[680px] flex items-center">
         {slides.map((slide, idx) => (
           <div
             key={slide.id || idx}
@@ -151,7 +151,7 @@ export default function HomePage() {
             </div>
 
             {/* Slide Text Content */}
-            <div className="relative max-w-7xl mx-auto px-6 sm:px-12 w-full text-white space-y-4 py-20">
+            <div className="relative max-w-7xl mx-auto px-6 sm:px-12 w-full text-white space-y-4 pt-36 pb-20 sm:pt-44 sm:pb-24">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight max-w-3xl whitespace-pre-line">
                 {slide.title}
               </h2>
