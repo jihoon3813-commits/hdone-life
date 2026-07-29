@@ -143,7 +143,7 @@ export default function HomePage() {
     },
     {
       title: "크루즈상품",
-      desc: "낭만과 꿈의 해외 크루즈 여행. HDONE-LIFE 회원만을 위한 스페셜 할인 혜택.",
+      desc: "낭만과 꿈의 해외 크루즈 여행. HDONE LIFE 회원만을 위한 스페셜 할인 혜택.",
       image: "https://res.cloudinary.com/lyjyvy54/image/upload/v1785313684/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_29%EC%9D%BC_%EC%98%A4%EC%A0%84_09_15_51_3_1_a0kkgd.png",
       href: "/service/cruise",
       badge: "럭셔리 여행",
@@ -316,15 +316,12 @@ export default function HomePage() {
           </div>
 
           <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto rounded-3xl overflow-hidden border-4 border-slate-800 shadow-2xl">
+            <div className="relative mx-auto rounded-3xl overflow-hidden border-4 border-slate-800 shadow-2xl aspect-square w-full">
               <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
-                alt="HDONE LIFE 비전"
-                className="w-full h-auto object-cover"
+                src="https://res.cloudinary.com/lyjyvy54/image/upload/v1785308930/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_29%EC%9D%BC_%EC%98%A4%ED%9B%84_03_50_36_ahhran.png"
+                alt="HDONE LIFE 소개"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-8">
-                <span className="text-white font-extrabold text-2xl">HDONE LIFE Headquarter</span>
-              </div>
             </div>
           </div>
         </div>

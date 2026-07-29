@@ -148,7 +148,7 @@ export default function QnaDetailPage() {
                 <div className="bg-amber-50/60 p-6 sm:p-8 rounded-2xl border border-amber-200 space-y-4">
                   <div className="flex items-center justify-between border-b border-amber-200/80 pb-3">
                     <h3 className="font-bold text-lg text-amber-950 flex items-center gap-2">
-                      <ShieldCheck className="w-5 h-5 text-amber-600" /> HDONE-LIFE 관리자 답변
+                      <ShieldCheck className="w-5 h-5 text-amber-600" /> HDONE LIFE 관리자 답변
                     </h3>
                     <span className="text-xs text-amber-800">{qna.answer_at?.split(" ")[0]}</span>
                   </div>

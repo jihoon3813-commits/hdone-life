@@ -41,7 +41,7 @@ export default function GalleryListPage() {
 
       <SubVisual
         title="갤러리"
-        subtitle="HDONE-LIFE의 실제 서비스 현장 및 브랜드 액티비티 갤러리입니다."
+        subtitle="HDONE LIFE의 실제 서비스 현장 및 브랜드 액티비티 갤러리입니다."
         categoryName="갤러리"
         currentPageName="갤러리"
         subItems={subNavItems}

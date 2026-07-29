@@ -108,7 +108,7 @@ const defaultData: DBStructure = {
     {
       id: 1,
       site_name: "HDONE LIFE",
-      company_kr_name: "(주)에이치디원",
+      company_kr_name: "(주)에이치디원컴퍼니",
       phone: "1544-8826",
       email: "contact@hdone-life.co.kr",
       address: "서울시 중랑구 동일로 964, 4층 4061호(묵동, 에릭슨시스템)",
@@ -252,7 +252,7 @@ const defaultData: DBStructure = {
     },
     {
       id: 3,
-      title: "HDONE-LIFE 프리미엄 럭셔리 크루즈 투어",
+      title: "HDONE LIFE 프리미엄 럭셔리 크루즈 투어",
       content: "동남아 고품격 크루즈 객실 및 부대시설 전경입니다.",
       author: "관리자",
       views: 178,

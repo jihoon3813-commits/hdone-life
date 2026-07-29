@@ -42,7 +42,7 @@ export default function LocationPage() {
 
       <SubVisual
         title="오시는 길"
-        subtitle="HDONE-LIFE 본사 위치 및 대중교통 이용 방법을 안내해 드립니다."
+        subtitle="HDONE LIFE 본사 위치 및 대중교통 이용 방법을 안내해 드립니다."
         categoryName="회사소개"
         currentPageName="오시는 길"
         subItems={subNavItems}
@@ -108,7 +108,7 @@ export default function LocationPage() {
           {/* Interactive Map Iframe Placeholder */}
           <div className="relative w-full h-[400px] bg-slate-800 flex items-center justify-center text-center p-6">
             <iframe
-              title="HDONE-LIFE 오시는 길 지도"
+              title="HDONE LIFE 오시는 길 지도"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "contrast(1.05)" }}

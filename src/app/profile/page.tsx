@@ -37,7 +37,7 @@ export default function ProfilePage() {
 
       <SubVisual
         title="회원정보 관리"
-        subtitle="HDONE-LIFE 회원님의 내 정보 조회 및 관리"
+        subtitle="HDONE LIFE 회원님의 내 정보 조회 및 관리"
         categoryName="회원서비스"
         currentPageName="회원정보 관리"
         subItems={[
@@ -57,7 +57,7 @@ export default function ProfilePage() {
               <div>
                 <h2 className="text-2xl font-extrabold text-slate-900">{user.name} 님</h2>
                 <span className="text-xs font-bold text-amber-600 bg-amber-100 px-2.5 py-0.5 rounded-full inline-block mt-1">
-                  {user.role === "admin" ? "최고 관리자 계정" : "HDONE-LIFE 정회원"}
+                  {user.role === "admin" ? "최고 관리자 계정" : "HDONE LIFE 정회원"}
                 </span>
               </div>
             </div>

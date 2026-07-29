@@ -134,14 +134,12 @@ export default function Header({ siteConfig }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 font-extrabold px-3 py-1.5 rounded text-xl tracking-wider shadow-md group-hover:from-amber-400 group-hover:to-amber-500 transition-all">
-              HDONE
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-lg text-white tracking-widest leading-none">LIFE</span>
-              <span className="text-[10px] text-slate-400 tracking-tighter mt-0.5">에치디원 라이프</span>
-            </div>
+          <Link href="/" className="flex items-center group py-2">
+            <img
+              src="https://res.cloudinary.com/lyjyvy54/image/upload/v1785311356/Vector_kau2qp.png"
+              alt="HDONE LIFE 로고"
+              className="h-10 sm:h-12 w-auto object-contain brightness-0 invert group-hover:opacity-85 transition-all"
+            />
           </Link>
 
           {/* Desktop Navigation */}

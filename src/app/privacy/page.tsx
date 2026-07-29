@@ -22,7 +22,7 @@ export default function PrivacyPage() {
 
       <SubVisual
         title="개인정보처리방침"
-        subtitle="HDONE-LIFE는 고객님의 개인정보를 소중히 다루며 법령을 준수합니다."
+        subtitle="HDONE LIFE는 고객님의 개인정보를 소중히 다루며 법령을 준수합니다."
         categoryName="이용안내"
         currentPageName="개인정보처리방침"
         subItems={[{ name: "개인정보처리방침", href: "/privacy" }]}
@@ -32,13 +32,13 @@ export default function PrivacyPage() {
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-8 w-full flex-1 space-y-8">
         <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6 text-slate-700 text-sm leading-relaxed">
           <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-            HDONE-LIFE 개인정보처리방침
+            HDONE LIFE 개인정보처리방침
           </h2>
 
           <div className="space-y-4">
             <h3 className="font-bold text-slate-900 text-base">1. 개인정보의 수집 및 이용 목적</h3>
             <p>
-              HDONE-LIFE는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br />
+              HDONE LIFE는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보 보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br />
               - 회원가입 및 관리, 1:1 상담접수 및 본인확인, 서비스 예약 안내
             </p>
 

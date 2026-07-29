@@ -55,7 +55,7 @@ export default function NoticeListPage() {
 
       <SubVisual
         title="공지사항"
-        subtitle="HDONE-LIFE의 주요 소식과 안내 사항을 알려드립니다."
+        subtitle="HDONE LIFE의 주요 소식과 안내 사항을 알려드립니다."
         categoryName="고객센터"
         currentPageName="공지사항"
         subItems={subNavItems}

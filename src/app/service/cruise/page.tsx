@@ -39,8 +39,18 @@ export default function CruiseServicePage() {
       />
 
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-8 w-full flex-1 space-y-16">
-        {/* Top Text Banner */}
-        <div className="bg-slate-900 text-white rounded-sm p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        {/* Top Text Banner with Background Image */}
+        <div className="text-white rounded-sm p-8 sm:p-12 shadow-2xl relative overflow-hidden min-h-[360px] flex items-center">
+          {/* Background Image & Overlay */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="https://res.cloudinary.com/lyjyvy54/image/upload/v1785308929/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_29%EC%9D%BC_%EC%98%A4%ED%9B%84_03_38_13_3_anpd46.png"
+              alt="크루즈 서비스 안내"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/40" />
+          </div>
+
           <div className="space-y-4 max-w-2xl relative z-10">
             <span className="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-sm text-xs font-bold">
               HDONE LIFE 회원 전용 특별 할인 혜택
@@ -55,27 +65,18 @@ export default function CruiseServicePage() {
             <div className="pt-4 flex flex-wrap gap-4">
               <a
                 href={`tel:${siteConfig?.phone || "1544-8826"}`}
-                className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-sm flex items-center gap-2 text-sm transition-all"
+                className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-sm flex items-center gap-2 text-sm transition-all shadow-lg"
               >
                 <PhoneCall className="w-4 h-4" /> 24시 전화상담 {siteConfig?.phone || "1544-8826"}
               </a>
               <Link
                 href="/inquiry"
-                className="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-3 rounded-sm flex items-center gap-2 text-sm border border-slate-700 transition-all"
+                className="bg-slate-900/80 hover:bg-slate-800 text-white font-bold px-6 py-3 rounded-sm flex items-center gap-2 text-sm border border-slate-700/80 transition-all backdrop-blur-sm shadow-lg"
               >
                 <Send className="w-4 h-4 text-amber-400" /> 1:1 온라인 문의
               </Link>
             </div>
           </div>
-        </div>
-
-        {/* Banner Image above Table */}
-        <div className="w-full overflow-hidden rounded-sm border border-slate-200 shadow-md">
-          <img
-            src="https://res.cloudinary.com/lyjyvy54/image/upload/v1785308929/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_29%EC%9D%BC_%EC%98%A4%ED%9B%84_03_38_13_3_anpd46.png"
-            alt="크루즈 서비스 안내"
-            className="w-full h-auto object-cover"
-          />
         </div>
 
         {/* Cruise Travel Details Table */}

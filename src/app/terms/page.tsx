@@ -22,7 +22,7 @@ export default function TermsPage() {
 
       <SubVisual
         title="서비스 이용약관"
-        subtitle="HDONE-LIFE 홈페이지 이용에 대한 약관입니다."
+        subtitle="HDONE LIFE 홈페이지 이용에 대한 약관입니다."
         categoryName="이용안내"
         currentPageName="서비스 이용약관"
         subItems={[{ name: "서비스 이용약관", href: "/terms" }]}
@@ -32,13 +32,13 @@ export default function TermsPage() {
       <section className="py-16 max-w-4xl mx-auto px-4 sm:px-8 w-full flex-1 space-y-8">
         <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6 text-slate-700 text-sm leading-relaxed">
           <h2 className="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3">
-            HDONE-LIFE 서비스 이용약관
+            HDONE LIFE 서비스 이용약관
           </h2>
 
           <div className="space-y-4">
             <h3 className="font-bold text-slate-900 text-base">제 1 조 (목적)</h3>
             <p>
-              본 약관은 HDONE-LIFE (이하 &quot;회사&quot;)가 제공하는 모든 웹사이트 서비스(장례, 웨딩, 크루즈, 펫장례 및 1:1 상담 서비스)의 이용조건 및 절차, 이용자와 회사의 권리, 의무, 책임사항을 규정함을 목적으로 합니다.
+              본 약관은 HDONE LIFE (이하 &quot;회사&quot;)가 제공하는 모든 웹사이트 서비스(장례, 웨딩, 크루즈, 펫장례 및 1:1 상담 서비스)의 이용조건 및 절차, 이용자와 회사의 권리, 의무, 책임사항을 규정함을 목적으로 합니다.
             </p>
 
             <h3 className="font-bold text-slate-900 text-base">제 2 조 (용어의 정의)</h3>

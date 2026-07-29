@@ -22,7 +22,7 @@ export default function Footer({ siteConfig }: FooterProps) {
 
   const config = {
     site_name: siteConfig?.site_name || "HDONE LIFE",
-    company_kr_name: siteConfig?.company_kr_name || "(주)에이치디원",
+    company_kr_name: siteConfig?.company_kr_name || "(주)에이치디원컴퍼니",
     phone: siteConfig?.phone || "1544-8826",
     address: siteConfig?.address || "서울시 중랑구 동일로 964, 4층 4061호(묵동, 에릭슨시스템)",
     business_number: siteConfig?.business_number || "149-86-03849",
@@ -36,14 +36,12 @@ export default function Footer({ siteConfig }: FooterProps) {
         {/* Top Header: Logo on left, Nav links on right */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-gray-800/80">
           {/* Logo */}
-          <Link href="/" className="inline-flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-full border border-gray-300/80 flex items-center justify-center text-white font-serif font-extrabold text-sm tracking-tighter shadow-sm">
-              HD
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-white font-extrabold text-xl tracking-widest font-serif">HDONE</span>
-              <span className="text-[8px] text-gray-400 font-semibold tracking-widest pt-1 uppercase">PREMIUM MEMBERSHIP</span>
-            </div>
+          <Link href="/" className="inline-flex items-center">
+            <img
+              src="https://res.cloudinary.com/lyjyvy54/image/upload/v1785311356/Vector_kau2qp.png"
+              alt="HDONE LIFE 로고"
+              className="h-10 w-auto object-contain brightness-0 invert"
+            />
           </Link>
 
           {/* Navigation Links */}
