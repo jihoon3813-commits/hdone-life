@@ -90,43 +90,33 @@ export default function CruiseServicePage() {
             <table className="w-full text-center border-collapse text-xs sm:text-sm">
               <thead>
                 <tr className="bg-[#000865] text-white font-bold divide-x divide-white/20">
-                  <th className="py-3 px-4 w-1/4 sm:w-1/5">품 목</th>
-                  <th className="py-3 px-4 w-3/4 sm:w-4/5">내 용</th>
+                  <th className="py-3 px-4 w-1/4 sm:w-1/5">구분</th>
+                  <th className="py-3 px-4 w-3/4 sm:w-4/5">제공 서비스 상세 내역</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-200">
                 <tr className="bg-white hover:bg-slate-50 transition-colors divide-x divide-slate-200">
-                  <td className="py-3 px-4 font-bold text-slate-900">지역</td>
-                  <td className="py-3 px-4 text-slate-800">동남아(싱가폴+말레이시아+인도네시아)</td>
+                  <td className="py-3 px-4 font-bold text-slate-900">상품 구성</td>
+                  <td className="py-3 px-4 text-slate-800 text-left sm:text-center">동남아(싱가포르+말레이시아+인도네시아) 등 고품격 크루즈 코스</td>
                 </tr>
                 <tr className="bg-white hover:bg-slate-50 transition-colors divide-x divide-slate-200">
-                  <td className="py-3 px-4 font-bold text-slate-900">기간</td>
-                  <td className="py-3 px-4 text-slate-800">3박 5일</td>
+                  <td className="py-3 px-4 font-bold text-slate-900">보장 인원</td>
+                  <td className="py-3 px-4 text-slate-800 text-left sm:text-center">성인 1명 기준 서비스 제공</td>
                 </tr>
                 <tr className="bg-white hover:bg-slate-50 transition-colors divide-x divide-slate-200">
-                  <td className="py-3 px-4 font-bold text-slate-900">인원</td>
-                  <td className="py-3 px-4 text-slate-800">1명</td>
-                </tr>
-                {/* Special Discount Callout Row */}
-                <tr className="bg-white hover:bg-slate-50 transition-colors">
-                  <td colSpan={2} className="py-4 px-4 font-bold text-slate-900 text-sm sm:text-base border-t border-b border-slate-300">
-                    동남아 크루즈 상품은 회원을 위한 특별 할인된 상품입니다. 크루즈 출발 일정의 <span className="text-red-600 font-extrabold">총 금액에서 20만원을 할인</span>해 드립니다
-                  </td>
+                  <td className="py-3 px-4 font-bold text-slate-900">특별 혜택</td>
+                  <td className="py-3 px-4 text-slate-800 text-left sm:text-center">20만원 특별할인 혜택 적용</td>
                 </tr>
                 <tr className="bg-white hover:bg-slate-50 transition-colors divide-x divide-slate-200">
-                  <td className="py-4 px-4 font-bold text-slate-900 align-middle">불포함<br className="hidden sm:inline" />사항</td>
-                  <td className="py-4 px-4 text-slate-800 text-left leading-relaxed">
-                    - 선별 개별 지출 비용(주류,마사지 비용등)<br />
-                    - 선상 팁,유류 할증료
-                  </td>
+                  <td className="py-3 px-4 font-bold text-slate-900">제휴사</td>
+                  <td className="py-3 px-4 text-slate-800 text-left sm:text-center">크루즈 전문 회사 상품</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div className="text-center space-y-1 text-slate-700 text-xs sm:text-sm font-medium pt-2">
-            <p>크루즈 여행은 최소6개월 이전 예약 및 상담을 받으셔야 합니다.</p>
-            <p>상품은 선택 범위를 확대해 드리고자 기획한 상품으로 가항지는 선사 및 계절별 프로그램에 따라 변경될 수 있습니다.</p>
+          <div className="space-y-1 text-red-600 font-bold text-xs sm:text-sm pt-2">
+            <p>※ 크루즈 여행은 최소 6개월 이전 예약 및 상담을 받으셔야 합니다.</p>
           </div>
         </div>
       </section>
