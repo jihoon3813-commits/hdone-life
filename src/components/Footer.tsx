@@ -76,24 +76,6 @@ export default function Footer({ siteConfig }: FooterProps) {
           </div>
         </div>
 
-        {/* Company Details */}
-        <div className="space-y-2 text-xs text-gray-400 leading-relaxed font-normal">
-          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <span>{config.company_kr_name}</span>
-            <span className="text-gray-600">|</span>
-            <span>대표자: {config.ceo_name}</span>
-            <span className="text-gray-600">|</span>
-            <span>사업자등록번호: {config.business_number}</span>
-            <span className="text-gray-600">|</span>
-          </div>
-          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <span>주소: {config.address}</span>
-            <span className="text-gray-600">|</span>
-            <span>
-              고객센터: <a href={`tel:${config.phone}`} className="text-gray-200 hover:underline">{config.phone}</a> ({config.hours})
-            </span>
-          </div>
-        </div>
 
         {/* Copyright */}
         <div className="pt-2 text-[11px] text-gray-500 flex items-center justify-between">
